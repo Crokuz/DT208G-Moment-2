@@ -1,0 +1,73 @@
+<!--
+Författare: Leander Norberg
+Projketnamn: Moment 2
+Beskrivning: Praktisk laboration utvecklat i samband med kursen 
+Programmering i TypeScript (DT208G ) vid mittuniversitetet, VT2025 
+-->
+
+<!doctype html>
+<html lang="sv">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moment 2, DT208G</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Uppgiftslista</h1>
+        </header>
+
+        <section id="main">
+            <div id="taskList">
+                <div class="contentWrapper">
+                
+                    <h2>Mina uppgifter</h2>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Uppgift</th>
+                                <th>Status</th>
+                                <th>Prioritet</th>
+                                <th>Klar?</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="listBody"></tbody>
+                    </table>
+
+                    <h2>Lägg till en ny uppgift</h2>
+
+                    <form>
+                        <label for="task">Uppgift:</label><br>
+                        <input type="text" id="task" name="task"><br><br>
+
+                        <label for="status">Status:</label><br>
+                        <select id="status">
+                        <option value="false">Ej påbörjad</option>
+                        <option value="true">Klar</option>
+                        </select><br><br>
+
+                        <label for="priority">Prioritet:</label><br>
+                        <select id="priority">
+                        <option value="1">Låg</option>
+                        <option value="2">Medel</option>
+                        <option value="3">Hög</option>
+                        </select><br><br>
+
+                        <input type="submit" value="Lägg till" class="button" >
+                    </form>
+
+                    <button id="clearList" class="button">Rensa listan</button>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Programmering i TypeScript (DT208G), &shy;Mittuniversitetet VT25</p>
+        </footer>
+
+        <script type="module" src="/src/main.ts"></script>
+    </body>
+</html>
