@@ -18,51 +18,48 @@ Programmering i TypeScript (DT208G ) vid mittuniversitetet, VT2025
             <h1>Uppgiftslista</h1>
         </header>
 
-        <section id="main">
-            <div id="taskList">
-                <div class="contentWrapper">
-                
-                    <h2>Mina uppgifter</h2>
+        <main>
+            <div class="contentWrapper">
+                <h2>Mina uppgifter</h2>
 
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Uppgift</th>
-                                <th>Status</th>
-                                <th>Prioritet</th>
-                                <th>Klar?</th>
-                            </tr>
-                        </thead>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Uppgift</th>
+                            <th>Status</th>
+                            <th>Prioritet</th>
+                            <th>Klar?</th>
+                        </tr>
+                    </thead>
 
-                        <tbody id="listBody"></tbody>
-                    </table>
+                    <tbody id="listBody"></tbody>
+                </table>
 
-                    <h2>Lägg till en ny uppgift</h2>
+                <h2>Lägg till en ny uppgift</h2>
 
-                    <form>
-                        <label for="task">Uppgift:</label><br>
-                        <input type="text" id="task" name="task"><br><br>
+                <form>
+                    <label for="task">Uppgift:</label><br>
+                    <input type="text" id="task" name="task"><br><br>
 
-                        <label for="status">Status:</label><br>
-                        <select id="status">
-                        <option value="false">Ej påbörjad</option>
-                        <option value="true">Klar</option>
-                        </select><br><br>
+                    <label for="status">Status:</label><br>
+                    <select id="status">
+                    <option value="false">Ej påbörjad</option>
+                    <option value="true">Klar</option>
+                    </select><br><br>
 
-                        <label for="priority">Prioritet:</label><br>
-                        <select id="priority">
-                        <option value="1">Låg</option>
-                        <option value="2">Medel</option>
-                        <option value="3">Hög</option>
-                        </select><br><br>
+                    <label for="priority">Prioritet:</label><br>
+                    <select id="priority">
+                    <option value="1">Låg</option>
+                    <option value="2">Medel</option>
+                    <option value="3">Hög</option>
+                    </select><br><br>
 
-                        <input type="submit" value="Lägg till" class="button" >
-                    </form>
+                    <input type="submit" value="Lägg till" class="button" >
+                </form>
 
-                    <button id="clearList" class="button">Rensa listan</button>
-                </div>
+                <button id="clearList" class="button">Rensa listan</button>
             </div>
-        </section>
+        </main>
 
         <footer>
             <p>Programmering i TypeScript (DT208G), &shy;Mittuniversitetet VT25</p>
